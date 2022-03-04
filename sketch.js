@@ -36,7 +36,7 @@ function preload(){
 function setup(){
   createCanvas(1000, 800, WEBGL);
   cam=createCapture(VIDEO);
-  cam.size(1067, 800);
+  cam.size(800, 600);
   
 
   
@@ -77,7 +77,7 @@ function draw(){
   
   
   blendMode(BLEND);
-  image(cam, -533, -200, 1067, 800);
+  image(cam, -533, -200, 800, 600);
   
   blendMode(MULTIPLY);
   image(vid, -550, -400, 1150, 800);

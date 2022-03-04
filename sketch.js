@@ -34,9 +34,9 @@ function preload(){
 
 
 function setup(){
-  createCanvas(800, 600, WEBGL);
+  createCanvas(1000, 800, WEBGL);
   cam=createCapture(VIDEO);
-  cam.size(800, 600);
+  cam.size(1000, 800);
   
 
   
@@ -50,7 +50,7 @@ function setup(){
     ['https://files.cargocollective.com/c1419425/void_upload2.mp4']
   );
 
-  vid.size(800, 600);
+  vid.size(1000, 800);
     
   vid.hide();
   vid.loop();
@@ -77,10 +77,10 @@ function draw(){
   
   
   blendMode(BLEND);
-  image(cam, -400, -300, 800, 600);
+  image(cam, -500, -400, 1000, 800);
   
   blendMode(MULTIPLY);
-  image(vid, -400, -300, 950, 600);
+  image(vid, -500, -400, 1150, 800);
   
   
 }

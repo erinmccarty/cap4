@@ -77,7 +77,7 @@ function draw(){
   
   
   blendMode(BLEND);
-  image(cam, -450, -400, 1000, 800);
+  image(cam, -500, -100, 1000, 800);
   
   blendMode(MULTIPLY);
   image(vid, -520, -400, 1150, 800);

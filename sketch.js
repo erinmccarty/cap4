@@ -1,17 +1,13 @@
-
 /*
 let vid;
 function setup() {
   noCanvas();
-
   vid = createVideo(
     ['https://files.cargocollective.com/c1419425/finalvoidv3.mp4'],
     vidLoad
   );
-
   vid.size(300, 300);
 }
-
 // This function is called when the video loads
 function vidLoad() {
   vid.loop();
@@ -28,13 +24,12 @@ let vid;
 /*
 function preload(){
   vid = createVideo('https://files.cargocollective.com/c1419425/finalvoidv3.mp4');
-
 }
 */
 
 
 function setup(){
-  createCanvas(1920, 10800, WEBGL);
+  createCanvas(1920, 1080, WEBGL);
   cam=createCapture(VIDEO);
   cam.size(1920, 1080);
   
@@ -63,7 +58,7 @@ function setup(){
 function draw(){
 
   //background(0);
-  background(7, 18, 10);
+ // background(7, 18, 10);
   
 
   
@@ -75,16 +70,19 @@ function draw(){
   //image(vid, 300, 200, 600, 400);
 
   
+  push();
+  
+  translate(-960,-1080,0);
   
   blendMode(BLEND);
-  image(cam, -500, -200, 1920, 1080);
+  image(cam, 0, 0, 1920, 1080);
   
   blendMode(MULTIPLY);
-  image(vid, -520, -400, 2070, 1080);
+  image(vid, 0, 0, 2160, 1080);
   
+   pop()
   
 }
-
 
 
 
